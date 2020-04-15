@@ -1,0 +1,708 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      },
+      {
+        "line": 19,
+        "value": "#@tag"
+      },
+      {
+        "line": 20,
+        "value": "#Feature: Title of your feature"
+      },
+      {
+        "line": 21,
+        "value": "#I want to use this template for my feature file"
+      },
+      {
+        "line": 22,
+        "value": "#"
+      },
+      {
+        "line": 23,
+        "value": "#@tag1"
+      },
+      {
+        "line": 24,
+        "value": "#Scenario: Title of your scenario"
+      },
+      {
+        "line": 25,
+        "value": "#Given I want to write a step with precondition"
+      },
+      {
+        "line": 26,
+        "value": "#And some other precondition"
+      },
+      {
+        "line": 27,
+        "value": "#When I complete action"
+      },
+      {
+        "line": 28,
+        "value": "#And some other action"
+      },
+      {
+        "line": 29,
+        "value": "#And yet another action"
+      },
+      {
+        "line": 30,
+        "value": "#Then I validate the outcomes"
+      },
+      {
+        "line": 31,
+        "value": "#And check more outcomes"
+      },
+      {
+        "line": 32,
+        "value": "#"
+      },
+      {
+        "line": 33,
+        "value": "#@tag2"
+      },
+      {
+        "line": 34,
+        "value": "#Scenario Outline: Title of your scenario outline"
+      },
+      {
+        "line": 35,
+        "value": "#Given I want to write a step with \u003cname\u003e"
+      },
+      {
+        "line": 36,
+        "value": "#When I check for the \u003cvalue\u003e in step"
+      },
+      {
+        "line": 37,
+        "value": "#Then I verify the \u003cstatus\u003e in step"
+      },
+      {
+        "line": 38,
+        "value": "#"
+      },
+      {
+        "line": 39,
+        "value": "#Examples:"
+      },
+      {
+        "line": 40,
+        "value": "#| name  | value | status  |"
+      },
+      {
+        "line": 41,
+        "value": "#| name1 |     5 | success |"
+      },
+      {
+        "line": 42,
+        "value": "#| name2 |     7 | Fail    |"
+      }
+    ],
+    "line": 44,
+    "elements": [
+      {
+        "line": 48,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "opencart;login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20419757400,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user is not logged in and is on the login page",
+            "match": {
+              "location": "invalidlogin.user_is_not_logged_in_and_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 328731300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user enters invalid username",
+            "match": {
+              "location": "invalidlogin.user_enters_invalid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152328300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user enters invalid password",
+            "match": {
+              "location": "invalidlogin.user_enters_invalid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1713800000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user clicks login button",
+            "match": {
+              "location": "invalidlogin.user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142941600,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "a warning message is displayed",
+            "match": {
+              "location": "invalidlogin.a_warning_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 47,
+            "name": "@TC01"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 54,
+            "value": "#"
+          }
+        ],
+        "line": 56,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "opencart;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18502080400,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user is on the login page",
+            "match": {
+              "location": "login.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 650213100,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user enters valid username",
+            "match": {
+              "location": "login.user_enters_valid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170251100,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user enters valid password",
+            "match": {
+              "location": "login.user_enters_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2884025900,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user clicks login button to login",
+            "match": {
+              "location": "login.user_clicks_login_button_to_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 550782100,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "account page is displayed",
+            "match": {
+              "location": "login.account_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 55,
+            "name": "@TC02"
+          }
+        ]
+      },
+      {
+        "line": 65,
+        "name": "add product to wishlist",
+        "description": "",
+        "id": "opencart;add-product-to-wishlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21560358500,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user is on account page and wants to add a product to wishlist",
+            "match": {
+              "location": "addtowishlist.user_is_on_account_page_and_wants_to_add_a_product_to_wishlist()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2400277000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user navigates to product page by selecting a product",
+            "match": {
+              "location": "addtowishlist.user_navigates_to_product_page_by_selecting_a_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 357878300,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user clicks add to wishlist",
+            "match": {
+              "location": "addtowishlist.user_clicks_add_to_wishlist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 453446400,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "product is added to wishlist",
+            "match": {
+              "location": "addtowishlist.product_is_added_to_wishlist()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 64,
+            "name": "@TC03"
+          }
+        ]
+      },
+      {
+        "line": 73,
+        "name": "compare product in wishlist",
+        "description": "",
+        "id": "opencart;compare-product-in-wishlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23555657400,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "user is on account page and wants to compare a product in the wishlist",
+            "match": {
+              "location": "comparewishlist.user_is_on_account_page_and_wants_to_compare_a_product_in_the_wishlist()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2776565200,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "user clicks wishlist",
+            "match": {
+              "location": "comparewishlist.user_clicks_wishlist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3500041100,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "user compares product in wishlist",
+            "match": {
+              "location": "comparewishlist.user_compares_product_in_wishlist()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "selected product is compared",
+            "match": {
+              "location": "comparewishlist.selected_product_is_compared()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 72,
+            "name": "@TC04"
+          }
+        ]
+      },
+      {
+        "line": 81,
+        "name": "user want to edit address",
+        "description": "",
+        "id": "opencart;user-want-to-edit-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23494278500,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "user is on account page and wants to edit address",
+            "match": {
+              "location": "editaddress.user_is_on_account_page_and_wants_to_edit_address()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1978044000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "user navigates to my account page to edit address",
+            "match": {
+              "location": "editaddress.user_navigates_to_my_account_page_to_edit_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3233554000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "user clicks on address book",
+            "match": {
+              "location": "editaddress.user_clicks_on_address_book()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4307849500,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "user changes the address",
+            "match": {
+              "location": "editaddress.user_changes_the_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3332170100,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "user clicks submit to apply changes",
+            "match": {
+              "location": "editaddress.user_clicks_submit_to_apply_changes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56349300,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "address of user is changed",
+            "match": {
+              "location": "editaddress.address_of_user_is_changed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 80,
+            "name": "@TC05"
+          }
+        ]
+      },
+      {
+        "line": 90,
+        "name": "enquiry",
+        "description": "",
+        "id": "opencart;enquiry",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25172951700,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user is on account page to enquire",
+            "match": {
+              "location": "enquiry.user_is_on_account_page_to_enquire()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2009280600,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user clicks contact us",
+            "match": {
+              "location": "enquiry.user_clicks_contact_us()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 282232500,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user enters queries",
+            "match": {
+              "location": "enquiry.user_enters_queries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6087859900,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "user clicks submit",
+            "match": {
+              "location": "enquiry.user_clicks_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 555552000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "query is submitted",
+            "match": {
+              "location": "enquiry.query_is_submitted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 89,
+            "name": "@TC06"
+          }
+        ]
+      },
+      {
+        "line": 98,
+        "name": "logout",
+        "description": "",
+        "id": "opencart;logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29283439700,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "user is on account page",
+            "match": {
+              "location": "logout.user_is_on_account_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 140559200,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "user clicks my account",
+            "match": {
+              "location": "logout.user_clicks_my_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3063877200,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "user clicks logout",
+            "match": {
+              "location": "logout.user_clicks_logout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2524450600,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "user clicks continue",
+            "match": {
+              "location": "logout.user_clicks_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92211000,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "user is logged out of his account",
+            "match": {
+              "location": "logout.user_is_logged_out_of_his_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 97,
+            "name": "@TC07"
+          }
+        ]
+      }
+    ],
+    "name": "opencart",
+    "description": "",
+    "id": "opencart",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/c.feature"
+  }
+]
